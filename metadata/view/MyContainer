@@ -1,0 +1,130 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyContainer"
+    },
+    "designerId": "4e4cff1b-970d-4e1b-92ee-720b7739c3c4",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "New Event"
+            },
+            "designerId": "197162b9-8fe9-4d89-8714-aa0f99363f25",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "back",
+                        "text": "Back",
+                        "ui": "back"
+                    },
+                    "designerId": "f9d15c10-5775-44ad-af8c-61e6394b5fed"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "c7927267-40ef-4aa5-8bc7-593216ede82b"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "",
+                "label": "Name of Event",
+                "labelWidth": "45%"
+            },
+            "designerId": "c884c058-0b51-4110-b005-0826534f5150"
+        },
+        {
+            "type": "Ext.field.Number",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Total Bill",
+                "labelWidth": "45%"
+            },
+            "designerId": "3d0f06a5-0571-4f3f-8d12-4efaa59b9b33"
+        },
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Who Paid",
+                "labelWidth": "45%"
+            },
+            "designerId": "0f64755e-1506-4d04-b8dc-b4f9611c4d4b"
+        },
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Paid For",
+                "labelWidth": "45%"
+            },
+            "designerId": "73493273-df67-4cef-bcd5-e0348aeebb61"
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "d418e5ca-0297-4a5f-8c3a-50f70f8318f1"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "confirm",
+                "docked": "bottom",
+                "text": "Submit",
+                "ui": "confirm",
+                "width": null
+            },
+            "designerId": "a18d6072-4505-460a-924d-344a79c1478a"
+        }
+    ]
+}
