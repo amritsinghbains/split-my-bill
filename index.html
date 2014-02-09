@@ -59,7 +59,7 @@
 <script>
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{your app id here}',
+    appId      : '{your-app-id}',
     status     : true, // check login status
     cookie     : true, // enable cookies to allow the server to access the session
     xfbml      : true  // parse XFBML
@@ -74,8 +74,15 @@
           FB.login();
         }
       });
-    
-        FB.getLoginStatus(function(response) {
+      var uri = encodeURI('http://splitthebill.t15.org');
+      FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+              testAPI();
+          } else {
+              window.location = encodeURI("https://www.facebook.com/dialog/oauth?client_id=632978873418170&redirect_uri="+uri+"&response_type=token");
+          }
+      });
+        /*FB.getLoginStatus(function(response) {
           if (response.status === 'connected') {
             // the user is logged in and has authenticated your
             // app, and response.authResponse supplies
@@ -93,7 +100,7 @@
             // the user isn't logged in to Facebook.
           FB.login();
           }
-         });  
+         });  */
   };
 
   (function(d){
@@ -161,7 +168,7 @@
                 });
             });
            FB.login(function(){
-               FB.api('/me/feed', 'post', {message: 'I have started using Split my Bill for keeping track of my daily expense with friends.'});
+               FB.api('/me/feed', 'post', {message: 'I have started using Split my Bill for keeping track of my daily expense with friends. https://apps.facebook.com/split-my-bill/'});
               }, {scope: 'publish_actions'});
         }
         
