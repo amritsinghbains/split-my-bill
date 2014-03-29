@@ -1,6 +1,8 @@
 split-my-bill
 =============
 
+DEMO: https://apps.facebook.com/split-my-bill/
+
 Its a facebook app that helps you keep track of your expenses with friends. 
 It fetches those names of friends that have more than 50 mutual friends. You can change this in index.html. Also you can add as many friends you want.
 
